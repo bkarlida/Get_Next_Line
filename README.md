@@ -23,4 +23,25 @@ Bu proje, dosya okuma işlemi sırasında her çağrıda bir satır okumayı ama
 4. Projeyi derlemek için aşağıdaki komutları kullanabilirsiniz:
 
     ```bash
-    gcc -
+    gcc -Wall -Wextra -Werror -D BUFFER_SIZE=32 get_next_line.c get_next_line_utils.c main.c -o gnl
+    ```
+
+    Bu komut, projeyi derleyecek ve "gnl" adlı bir yürütülebilir dosya oluşturacaktır.
+
+5. Derleme tamamlandıktan sonra projeyi kullanmak için aşağıdaki komutu kullanabilirsiniz:
+
+    ```bash
+    ./gnl
+    ```
+
+    Bu komut, derlenmiş "gnl" programını çalıştıracaktır.
+
+6. Projeyi temizlemek için aşağıdaki komutu kullanabilirsiniz:
+
+    ```bash
+    rm gnl
+    ```
+
+    Bu komut, derlenmiş yürütülebilir dosyayı kaldıracaktır.
+
+Bu adımları izleyerek "get_next_line" projesini derleyebilir ve çalıştırabilirsiniz.
